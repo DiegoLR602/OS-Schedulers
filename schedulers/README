@@ -1,0 +1,79 @@
+Diego Lopez Ramos - 2378206
+Brynn McGovern
+
+Files:
+schedule_fcfs.c - Brynn
+schedule_priority.c - Diego
+schedule_rr.c - Brynn
+schedule_sjf.c - Diego
+
+And everything else originally included in the schedulers folder
+
+Build Instructions:
+make fcfs
+make priority
+make rr
+make sjf
+
+Execution Instructions:
+./fcfs [file containing tasks]
+./priority [file containing tasks]
+./rr [file containing tasks]
+./sjf [file containing tasks]
+
+
+Sample output:
+diegolopezramos@HCEF20-LOPEZRAMOS schedulers % ./priority schedule.txt               
+Running task = [T8] [10] [25] for 25 units.
+Running task = [T5] [5] [20] for 20 units.
+Running task = [T4] [5] [15] for 15 units.
+Running task = [T1] [4] [20] for 20 units.
+Running task = [T7] [3] [30] for 30 units.
+Running task = [T3] [3] [25] for 25 units.
+Running task = [T2] [3] [25] for 25 units.
+Running task = [T6] [1] [10] for 10 units.
+
+diegolopezramos@HCEF20-LOPEZRAMOS schedulers % ./fcfs schedule.txt 
+Running task = [T8] [10] [25] for 25 units.
+Running task = [T7] [3] [30] for 30 units.
+Running task = [T6] [1] [10] for 10 units.
+Running task = [T5] [5] [20] for 20 units.
+Running task = [T4] [5] [15] for 15 units.
+Running task = [T3] [3] [25] for 25 units.
+Running task = [T2] [3] [25] for 25 units.
+Running task = [T1] [4] [20] for 20 units.
+
+diegolopezramos@HCEF20-LOPEZRAMOS schedulers % ./rr schedule.txt
+Running task = [T8] [10] [25] for 10 units.
+Running task = [T8] [10] [15] for 10 units.
+Running task = [T8] [10] [5] for 10 units.
+Running task = [T7] [3] [30] for 10 units.
+Running task = [T7] [3] [20] for 10 units.
+Running task = [T7] [3] [10] for 10 units.
+Running task = [T6] [1] [10] for 10 units.
+Running task = [T5] [5] [20] for 10 units.
+Running task = [T5] [5] [10] for 10 units.
+Running task = [T4] [5] [15] for 10 units.
+Running task = [T4] [5] [5] for 10 units.
+Running task = [T3] [3] [25] for 10 units.
+Running task = [T3] [3] [15] for 10 units.
+Running task = [T3] [3] [5] for 10 units.
+Running task = [T2] [3] [25] for 10 units.
+Running task = [T2] [3] [15] for 10 units.
+Running task = [T2] [3] [5] for 10 units.
+Running task = [T1] [4] [20] for 10 units.
+Running task = [T1] [4] [10] for 10 units.
+
+diegolopezramos@HCEF20-LOPEZRAMOS schedulers % ./sjf schedule.txt
+Running task = [T6] [1] [10] for 10 units.
+Running task = [T4] [5] [15] for 15 units.
+Running task = [T5] [5] [20] for 20 units.
+Running task = [T1] [4] [20] for 20 units.
+Running task = [T8] [10] [25] for 25 units.
+Running task = [T3] [3] [25] for 25 units.
+Running task = [T2] [3] [25] for 25 units.
+Running task = [T7] [3] [30] for 30 units.
+
+
+Used the following sources:
+Office Hours! Thank you!
